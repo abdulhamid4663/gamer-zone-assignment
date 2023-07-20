@@ -92,13 +92,12 @@ a:hover {
 
 .btn {
     display: inline-block;
-    font-size: var(--m-size);
+    font-size: var(--xs-size);
     font-weight: 600;
     color: white;
-    padding: 1.3125rem 2.5rem;
+    padding: 1rem 1.5rem;
     border-radius: 3rem;
     text-transform: uppercase;
-
 }
 
 /* HEADER SECTION STARTS */
@@ -264,7 +263,6 @@ a:hover {
     margin: 2rem 0 1.5rem;
     max-width: 520px;
 }
-
 .gamer-btn {
     margin-bottom: 3.75rem;
 }
@@ -272,40 +270,33 @@ a:hover {
 .gamer-btn .btn {
     background-color: var(--primary-color);
 }
-
 .gamer-text h1 {
     font-size: var(--m-size);
     color: var(--secondary-color);
     font-weight: 700;
 }
-
 .gamer-text h1 span {
     font-size: var(--xm-size);
     color: var(--secondary-color);
     font-weight: 500;
 }
-
 /* GAMER SECTION ENDS */
 
 /* ONLINE SECTION STARTS */
 .online {
     margin: 9.375rem 0 3.75rem;
 }
-
 .online .container>.row {
     gap: 30px;
 }
-
 .online-header {
     text-align: center;
     margin-bottom: 3.75rem;
 }
-
 .online-header h1 {
     font-size: var(--l-size);
     margin-bottom: 1rem;
 }
-
 .online-card {
     text-align: center;
     width: 100%;
@@ -360,35 +351,29 @@ a:hover {
     font-weight: 500;
     margin-top: 1.5rem;
 }
-
 /* ONLINE SECTION ENDS */
 
 /* PLAY SECTION STARTS */
 .play-content {
     width: 70%;
 }
-
 .play-text {
     max-width: 22.0625rem;
     text-align: center;
     margin-bottom: 4.625rem;
 }
-
 .play-text h1 {
     font-size: var(--xm-size);
     margin-bottom: 2.625rem;
 }
-
 .play-text p {
     font-size: var(--s-size);
     color: var(--secondary-color);
     font-weight: 400;
 }
-
 .play-image {
     position: relative;
 }
-
 .play-image-absolute {
     position: absolute;
     left: 0;
@@ -399,25 +384,21 @@ a:hover {
     max-width: 9.313rem;
     max-height: 9.25rem;
 }
-
 /* PLAY SECTION ENDS */
 
 /* CATEGORY SECTION STARTS */
 .category {
     margin: 10rem 0 7.5rem;
 }
-
 .category .container>.row {
     gap: 1.5625rem;
 }
-
 .category-item {
     padding: 0.625rem;
     border: 2px solid transparent;
     border-radius: 3.125rem;
     transition: all 150ms ease-in-out;
 }
-
 .category-item p {
     font-size: var(--m-size);
     color: var(--quaternary-color);
@@ -426,15 +407,12 @@ a:hover {
     padding-right: 0.625rem;
     transition: color 150ms ease-in-out;
 }
-
 .category-item:hover {
     border-color: var(--primary-color);
 }
-
 .category-item:hover p {
     color: var(--primary-color);
 }
-
 /* CATEGORY SECTION ENDS */
 
 /* FOOTER SECTION STARTS */
@@ -445,7 +423,6 @@ a:hover {
 .footer-logo-image {
     margin-right: 1.25rem;
 }
-
 .footer-logo-image img {
     vertical-align: middle;
 }
@@ -477,7 +454,6 @@ a:hover {
 .footer-social ul li {
     padding: 2.125rem;
 }
-
 .footer-social ul li a {
     font-size: 2.5rem;
     color: white;
@@ -485,33 +461,32 @@ a:hover {
 .footer-rules ul li {
     padding: 1.875rem;
 }
-
 .footer-rules ul li a {
     font-size: var(--xs-size);
     color: var(--foot-color);
     font-weight: 500;
 }
-
 .footer-copyright {
     margin-top: 2.75rem;
 }
-
 .footer-copyright p {
     font-size: var(--xs-size);
     color: var(--foot-color);
     font-weight: 500;
 }
-
 .footer-copyright p span {
     display: block;
 }
-
 /* FOOTER SECTION ENDS */
 
 /* RESPONSOVE MEDIA QUERIES */
 @media screen and (min-width: 768px) {
     .banner .banner-content .banner-image {
         margin: 0;
+    }
+    .btn {
+        font-size: var(--m-size);
+        padding: 1.3125rem 2.5rem;
     }
     .gamer-text h1 {
         font-size: var(--xm-size);
@@ -583,9 +558,7 @@ a:hover {
     .gamer {
         margin-top: 3.4375rem;
     }
-    .container {
-        padding: 0;
-    }
+
     .banner .container>.row {
         justify-content: flex-start;
         flex-direction: row;
@@ -629,7 +602,7 @@ a:hover {
         top: 4px;
         left: 3px;
         width: 98%;
-        height: 97%;
+        height: 96%;
         transform: none;
     }
 }
@@ -647,8 +620,14 @@ a:hover {
         max-width: 15.938rem;
         max-height: 18.875rem;
     }
+    .online-card-image.card-bg::after {
+        height: 97%;
+    }
 }
 @media screen and (min-width: 1405px) {
+    .container {
+        padding: 0;
+    }
     .online .container>.row {
         gap: 2.375rem;
     }
