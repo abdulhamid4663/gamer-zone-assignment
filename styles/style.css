@@ -288,6 +288,8 @@ a:hover {
 }
 .online .container>.row {
     gap: 30px;
+    flex-direction: column;
+    align-content: center;
 }
 .online-header {
     text-align: center;
@@ -299,7 +301,7 @@ a:hover {
 }
 .online-card {
     text-align: center;
-    width: 100%;
+    width: 87%;
 }
 .online-card-image.card-bg {
     position: relative;
@@ -310,7 +312,7 @@ a:hover {
     position: absolute;
     top: 4px;
     left: 50%;
-    width: 334px;
+    width: 98%;
     height: 97%;
     background-color: #000000b2;
     background-blend-mode: multiply;
@@ -480,6 +482,11 @@ a:hover {
 /* FOOTER SECTION ENDS */
 
 /* RESPONSOVE MEDIA QUERIES */
+@media screen and (min-width: 425px) {
+    .online-card-image.card-bg::after {
+        width: 335px;
+    }
+}
 @media screen and (min-width: 768px) {
     .banner .banner-content .banner-image {
         margin: 0;
@@ -490,6 +497,9 @@ a:hover {
     }
     .gamer-text h1 {
         font-size: var(--xm-size);
+    }
+    .online .container>.row {
+        flex-direction: row;
     }
     .banner-btn .btn-1 {
         margin-right: 1.5rem;
